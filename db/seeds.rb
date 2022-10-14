@@ -1,7 +1,37 @@
 @prototypes_data = [
   {
     name: 'First module / First prototype'
-  }
+  },
+  {
+    name: 'First oscillator'
+  },
+  {
+    name: 'First homework'
+  },
+  {
+    name: 'Oscillator with React components'
+  },
+  {
+    name: 'Tone js basics'
+  },
+  {
+    name: 'Tone js homework/1'
+  },
+  {
+    name: 'Tone js homework/2'
+  },
+  {
+    name: 'Tone js homework/3'
+  },
+  {
+    name: 'Tone.js with UI'
+  },
+  {
+    name: 'Tone.js with UI, better change function'
+  },
+  {
+    name: 'Tone.js with UI, two synths'
+  },
 ]
 
 def seed

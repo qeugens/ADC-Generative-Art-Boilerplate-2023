@@ -1,0 +1,53 @@
+.prototype_body_3 {
+  background: var(--black);
+}
+#prototype_3 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+
+  .text1 {
+    color: var(--blue-white);
+    font-family: Times;
+    text-transform: uppercase;
+    font-size: 180px;
+    letter-spacing: -3.8px;
+    margin: auto;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .text2 {
+    color: var(--blue-white);
+    font-family: Times;
+    text-transform: uppercase;
+    font-size: 235px;
+    letter-spacing: -5.2px;
+    margin: -60px auto;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .text3 {
+    color: var(--blue-white);
+    font-family: Times;
+    text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: -3.8px;
+    margin: 20px auto;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  .text4 {
+    color: var(--blue-white);
+    font-family: Times;
+    font-size: 120px;
+    margin: 200px auto;
+    letter-spacing: -3.8px;
+    text-align: right;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+  from {
+    text-shadow: 0 0 1px var(--blue-white), 0 0 2px var(--blue-white), 0 0 3px var(--grey), 0 0 4px var(--grey), 0 0 5px var(--grey), 0 0 6px var(--grey), 0 0 6px var(--grey);
+  }
+  to {
+    text-shadow: 0 0 2px var(--blue-white), 0 0 4px var(--grey), 0 0 5px var(--grey), 0 0 6px var(--grey), 0 0 7px var(--grey), 0 0 8px var(--grey), 0 0 9px var(--grey);
+  }
+}
+}
