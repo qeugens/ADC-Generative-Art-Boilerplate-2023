@@ -32,6 +32,15 @@
   {
     name: 'Tone.js with UI, two synths'
   },
+  {
+    name: 'Tone.js with UI, composition'
+  },
+  {
+    name: 'Tone.js with UI, sampler'
+  },
+  {
+    name: 'My synth'
+  },
 ]
 
 def seed
