@@ -336,13 +336,15 @@ export default class Container extends Component {
     return (
       <div className="Container">
         <SC_Button
-          text="Art Design & Coding Community"
+          text="dada synth start"
           handleClick={this.handleStart}
         />
 
+        <div className="display">
         <div className="synths">
         <div className="melodySynth">
         <ToneSynth
+          name="lead synth type"
           settings={melodySettings}
           handleValueChange={this.handleMelodyValueChange}
         />
@@ -350,31 +352,47 @@ export default class Container extends Component {
 
         <div className="bassSynth">
         <ToneSynth
+          name="bass synth type"
           settings={bassSettings}
           handleValueChange={this.handleBassValueChange}
         />
         </div>
         </div>
 
+        <div className="channels">
+        <div className="drums">
         <Channel
+          name='drums'
           settings={drumsSettings}
           handleValueChange={this.handleDrumsValueChange}
         />
+        </div>
 
+        <div className="xilo">
         <Channel
+          name='xilo'
           settings={xiloSettings}
           handleValueChange={this.handleXiloValueChange}
         />
+        </div>
 
+        <div className="maracas">
         <Channel
+          name='maracas'
           settings={maracasSettings}
           handleValueChange={this.handleMaracasValueChange}
         />
+        </div>
 
+        <div className="tambourine">
         <Channel
+          name='tambourine'
           settings={tambourineSettings}
           handleValueChange={this.handleTambourineValueChange}
         />
+        </div>
+        </div>
+        </div>
       </div>
     )
   }

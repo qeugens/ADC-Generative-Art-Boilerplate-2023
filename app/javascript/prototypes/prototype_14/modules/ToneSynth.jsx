@@ -9,13 +9,13 @@ export default class ToneSynth extends Component {
   }
 
   render() {
-    const { settings, handleValueChange } = this.props
-    const options = ['sine', 'square', 'sawtooth', 'triangle', 'fatsine', 'fatsquare', 'fatsawtooth', 'fattriangle', 'fmsine', 'fmsquare', 'fmsawtooth', 'fmtriangle', 'amsine', 'amsquare', 'amsawtooth', 'amtriangle', 'pulse', 'pwm']
+    const { settings, handleValueChange, name } = this.props
+    const options = ['sine', 'square', 'sawtooth', 'triangle', 'fatsine', 'fattriangle', 'fmsine', 'fmsquare', 'fmtriangle', 'amsine', 'amsawtooth', 'amtriangle']
 
     return (
       <div className="ToneSynth">
       <SC_ToggleButtonSet
-        name="Synth Type"
+        name={name}
         options={options}
         value={settings.synth.oscillator.type}
         property="synthType"
@@ -23,7 +23,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="Synth Envelope Attack"
+        // name="Synth Envelope Attack"
         min={0}
         max={10}
         step={0.01}
@@ -33,7 +33,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="Synth Envelope Decay"
+        // name="Synth Envelope Decay"
         min={0}
         max={10}
         step={0.01}
@@ -43,7 +43,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="Synth Envelope Sustain"
+        // name="Synth Envelope Sustain"
         min={0}
         max={1}
         step={0.01}
@@ -53,7 +53,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="Synth Envelope Release"
+        // name="Synth Envelope Release"
         min={0}
         max={10}
         step={0.01}
@@ -63,7 +63,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="pingPongDelay wet"
+        // name="pingPongDelay wet"
         min={0}
         max={1}
         step={0.01}
@@ -73,7 +73,7 @@ export default class ToneSynth extends Component {
       />
 
       <SC_Slider
-        name="chorus wet"
+        // name="chorus wet"
         min={0}
         max={1}
         step={0.01}

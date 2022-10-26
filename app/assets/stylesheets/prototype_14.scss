@@ -1,5 +1,5 @@
 .prototype_body_14 {
-  background: var(--medium-grey);
+  background: var(--yellow);
 }
 
 #prototype_14 {
@@ -12,16 +12,43 @@
   .synths {
     display: flex;
     flex-direction: raw;
-    * {
-      margin: 2%;
-      width: 100%;
+    margin: 10px;
+
+    .melodySynth {
+      width: 491px;
+      font-family: Diagramatika;
+      text-align: center;
+      font-size: 50px;
+      line-height: 49px;
+      background: var(--pink);
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    .bassSynth {
+      width: 491px;
+      font-family: Diagramatika;
+      text-align: center;
+      font-size: 50px;
+      line-height: 49px;
+      background: var(--orange);
+      border-radius: 10px;
+    }
+    h3 {
+      color: var(--black);
+      -webkit-text-stroke: 1px var(--black);
+      opacity: 0.08;
+      margin-top: 16px;
+      margin-bottom: 26px;
     }
   }
+  // .melodySynth {
+  //   width: 491px;
+  //   height: 800px;
+  // }
 
-
-  .Container {
+  .display {
     display: flex;
-    flex-direction: column;
+    flex-direction: raw;
     // justify-content: center;
     height: 100%;
     margin: auto;
@@ -29,26 +56,37 @@
 
   .Container {
     & > .SC_Button:first-child {
-      width: 560px;
+      width: 991px;
       height: 140px;
       // margin: auto;
       margin-bottom: 20px;
       color: var(--black);
-      background: var(--acid-green);
-      font-family: ADC, Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-family: Diagramatika;
       text-align: center;
-      font-size: 30px;
-      line-height: 150px;
+      font-size: 144px;
+      line-height: 140px;
+      -webkit-text-stroke: 11px var(--black);
+      transform: rotate(-1deg);
+      cursor: pointer;
+    }
+    .SC_ToggleButtonSet {
+      margin-left: 8px;
+      width: 500px;
+      margin-bottom: -50px;
+    }
+    .SC_ToggleButtonSet div {
+      display: inline-block;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      margin-top: -15px;
     }
     .SC_ToggleButton {
-      padding: 8px 10px;
-      font-size: 14px;
+      width: 98px;
+      height: 58px;
+      border-radius: 10px;
+      font-size: 0px;
       text-align: center;
-      text-transform: capitalize;
       background-color: var(--white);
-      color: var(--black);
       cursor: pointer;
 
       &:hover:not(.active) {
@@ -58,41 +96,244 @@
       &.active {
         font-weight: 800;
         color: var(--black);
-        background-color: var(--dark-green);
+        background-color: var(--black);
         cursor: default;
       }
     }
+    .channels {
+      margin-top: -130px;
+
+      .drums {
+        width: 491px;
+        height: 233px;
+        background: var(--blue);
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .SC_ToggleButton {
+          font-family: Diagramatika;
+          text-align: center;
+          margin-top: 80px;
+          margin-left: 27px;
+          width: 436px;
+          height: 58px;
+          border-radius: 10px;
+          font-size: 50px;
+          text-align: center;
+          color: #504A48;
+          background-color: var(--black);
+          cursor: pointer;
+
+          &:hover:not(.active) {
+            background-color: var(--light-grey);
+          }
+
+          &.active {
+            font-weight: 800;
+            color: var(--grey);
+            background-color: var(--black);
+            cursor: default;
+          }
+        }
+        }
+        h3 {
+          font-family: Diagramatika;
+          text-align: center;
+          font-size: 50px;
+          line-height: 49px;
+          color: var(--black);
+          -webkit-text-stroke: 1px var(--black);
+          opacity: 0.08;
+          margin-top: 16px;
+          margin-bottom: 26px;
+        }
+      }
+
+      .xilo {
+        width: 491px;
+        height: 233px;
+        background: var(--purple);
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .SC_ToggleButton {
+          font-family: Diagramatika;
+          text-align: center;
+          margin-top: 80px;
+          margin-left: 27px;
+          width: 436px;
+          height: 58px;
+          border-radius: 10px;
+          font-size: 50px;
+          text-align: center;
+          color: #504A48;
+          background-color: var(--black);
+          cursor: pointer;
+
+          &:hover:not(.active) {
+            background-color: var(--light-grey);
+          }
+
+          &.active {
+            font-weight: 800;
+            color: var(--grey);
+            background-color: var(--black);
+            cursor: default;
+          }
+        }
+        }
+        h3 {
+          font-family: Diagramatika;
+          text-align: center;
+          font-size: 50px;
+          line-height: 49px;
+          color: var(--black);
+          -webkit-text-stroke: 1px var(--black);
+          opacity: 0.08;
+          margin-top: 16px;
+          margin-bottom: 26px;
+        }
+      }
+
+
+      .maracas {
+        width: 491px;
+        height: 233px;
+        background: var(--grey);
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .SC_ToggleButton {
+          font-family: Diagramatika;
+          text-align: center;
+          margin-top: 80px;
+          margin-left: 27px;
+          width: 436px;
+          height: 58px;
+          border-radius: 10px;
+          font-size: 50px;
+          text-align: center;
+          color: #504A48;
+          background-color: var(--black);
+          cursor: pointer;
+
+          &:hover:not(.active) {
+            background-color: var(--light-grey);
+          }
+
+          &.active {
+            font-weight: 800;
+            color: var(--grey);
+            background-color: var(--black);
+            cursor: default;
+          }
+        }
+        }
+        h3 {
+          font-family: Diagramatika;
+          text-align: center;
+          font-size: 50px;
+          line-height: 49px;
+          color: var(--black);
+          -webkit-text-stroke: 1px var(--black);
+          opacity: 0.08;
+          margin-top: 16px;
+          margin-bottom: 26px;
+
+      }
+
+
+      .tambourine {
+        width: 491px;
+        height: 233px;
+        background: var(--green);
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .SC_ToggleButton {
+          font-family: Diagramatika;
+          text-align: center;
+          margin-top: 80px;
+          margin-left: 27px;
+          width: 436px;
+          height: 58px;
+          border-radius: 10px;
+          font-size: 50px;
+          text-align: center;
+          color: #504A48;
+          background-color: var(--black);
+          cursor: pointer;
+
+          &:hover:not(.active) {
+            background-color: var(--light-grey);
+          }
+
+          &.active {
+            font-weight: 800;
+            color: var(--grey);
+            background-color: var(--black);
+            cursor: default;
+          }
+        }
+        h3 {
+          font-family: Diagramatika;
+          text-align: center;
+          font-size: 50px;
+          line-height: 49px;
+          color: var(--black);
+          -webkit-text-stroke: 1px var(--black);
+          opacity: 0.08;
+          margin-top: 16px;
+          margin-bottom: 26px;
+
+      }
+        }
+
+
+    }
+
+
+
+
+
+
+
     .SC_Slider {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
-
-      h3 {
-        text-align: left;
-        width: 100%;
-        margin-bottom: 14px;
-        font-size: 16px;
+      height: 80px;
+      & > :first-child {
+        margin-top: -20px;
       }
+
+      // h3 {
+      //   text-align: left;
+      //   width: 100%;
+      //   margin-bottom: 14px;
+      //   font-size: 0px;
+      // }
 
       input[type='range'] {
         -webkit-appearance: none;
-        width: 100%;
+        width: 437px;
+        border-radius: 200px;
 
         &::-webkit-slider-runnable-track {
-          height: 4px;
+          height: 56px;
           background: var(--white);
           border: none;
+          border-radius: 200px;
         }
 
         &::-webkit-slider-thumb {
           -webkit-appearance: none;
           border: none;
-          height: 16px;
-          width: 16px;
+          height: 50px;
+          width: 50px;
           border-radius: 50%;
-          background: var(--dark-green);
-          margin-top: -6px;
+          background: var(--black);
+          margin-top: 3px;
           cursor: pointer;
         }
 
@@ -101,11 +342,12 @@
 
           &::-webkit-slider-runnable-track {
             background: var(--white);
+
           }
         }
       }
-    }
-  }
+
+
 
 
 }

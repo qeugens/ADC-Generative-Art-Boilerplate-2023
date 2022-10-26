@@ -9,12 +9,12 @@ export default class ToneSynth extends Component {
   }
 
   render() {
-    const { settings, handleValueChange } = this.props
+    const { settings, handleValueChange, name } = this.props
 
     return (
       <div className="ToneSynth">
         <SC_Slider
-          name="Channel Volume"
+          name={name}
           min={-60}
           max={10}
           step={1}
@@ -24,7 +24,7 @@ export default class ToneSynth extends Component {
         />
 
         <SC_ToggleButton
-          text="Mute"
+          text="mute"
           isOn={settings.channel.mute}
           handleClick={() =>
             handleValueChange('channelMute', !settings.channel.mute)
